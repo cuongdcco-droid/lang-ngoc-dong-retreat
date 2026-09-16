@@ -26,3 +26,11 @@ Chưa có video AI, ảnh thật của phòng, danh mục phòng, bảng giá ho
 - Kiểm tra trực quan desktop, mobile và dialog preview. Có fallback vh cho trình duyệt chưa hỗ trợ dvh.
 - Không ghi nhận pageerror trong lượt kiểm tra cuối. Test dùng browser context riêng và xóa dữ liệu thử sau khi hoàn tất.
 - Giới hạn: đây là local mock, không kiểm tra Supabase/Auth vì chưa cấu hình. Không đồng bộ nội dung giữa thiết bị/người dùng.
+
+## Rà soát trường chỉnh sửa còn thiếu
+
+- Đã kiểm tra chuyển dữ liệu v1 → v2 với nội dung, ảnh và CTA tùy chỉnh: giữ nguyên, không ghi vào storage khi chỉ mở trang.
+- Thay độc lập 4 ảnh tại Câu chuyện Làng, Long Cốc, Kỳ nghỉ cho hai; upload ảnh mới không đổi ảnh bìa.
+- Chỉnh chữ menu, liên kết menu, chú thích nguồn ảnh/khoảnh khắc, tên trên thanh chọn, CTA từng phòng và bật/tắt nhãn ảnh minh họa.
+- Tìm nội dung theo chữ đang hiển thị, mở đúng mục, lưu nháp, preview, publish sang tab public, tải lại vẫn giữ chỉnh sửa.
+- Không tràn ngang ở 1440, 768, 390, 320 px; kiểm tra trực quan admin desktop/mobile. Production build thành công.

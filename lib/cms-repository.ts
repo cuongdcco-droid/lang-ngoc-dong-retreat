@@ -1,6 +1,6 @@
-import { freshContent, validateContent, type ContentRepository, type Snapshot, type SiteContent, type AssetStorage, type AdminAuth } from './cms';
+import { freshContent, migrateContent, validateContent, type ContentRepository, type Snapshot, type SiteContent, type AssetStorage, type AdminAuth } from './cms';
 const KEY='ngoc-dong-cms-v1';
-function read():Snapshot{const raw=localStorage.getItem(KEY);if(!raw)return {draft:freshContent(),published:freshContent(),publishedAt:null};try{const state=JSON.parse(raw);validateContent(state.draft);validateContent(state.published);return state;}catch{throw new Error('Không đọc được nội dung đã lưu. Dữ liệu cũ vẫn được giữ; hãy kiểm tra bản sao lưu hoặc thử lại trên trình duyệt này.');}}
+function read():Snapshot{const raw=localStorage.getItem(KEY);if(!raw)return {draft:freshContent(),published:freshContent(),publishedAt:null};try{const state=JSON.parse(raw);return {...state,draft:migrateContent(state.draft),published:migrateContent(state.published)};}catch{throw new Error('Không đọc được nội dung đã lưu. Dữ liệu cũ vẫn được giữ; hãy kiểm tra bản sao lưu hoặc thử lại trên trình duyệt này.');}}
 function write(state:Snapshot){try{localStorage.setItem(KEY,JSON.stringify(state));window.dispatchEvent(new Event('cms-change'));}catch{throw new Error('Chưa lưu được: bộ nhớ trình duyệt đã đầy hoặc bị chặn. Hãy dùng ảnh nhỏ hơn. Nội dung đang sửa vẫn được giữ.');}}
 // Replace this adapter with an authenticated API / Supabase repository later.
 // Publishing writes draft + published in one operation; failed writes keep the last publication intact.

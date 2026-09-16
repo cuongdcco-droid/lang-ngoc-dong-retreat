@@ -35,3 +35,9 @@ Các biến trong `.env.example` là placeholder, chưa bật kết nối. Khôn
 6. Dữ liệu JSON-LD / metadata hiện vẫn là thông tin nền của site; khi dùng backend, sinh metadata phía server/build từ bản published. Bản local chỉ thay nội dung trong trình duyệt, không cập nhật SEO phía server.
 
 Ảnh và danh mục phòng mẫu vẫn cần chủ sở hữu xác nhận trước khi mở bán.
+
+## Bổ sung chỉnh sửa từng phần
+
+Ảnh Câu chuyện Làng (2 ảnh), Long Cốc và Kỳ nghỉ cho hai được thay riêng ngay trong từng mục, không còn phụ thuộc ảnh bìa. Đầu trang có tên và đích đến từng mục menu. Mỗi phòng có nhãn/liên kết nút riêng và tùy chọn nhãn ảnh minh họa. Mỗi khoảnh khắc có tên thanh chọn, chú thích nguồn và mô tả ảnh riêng. Thư viện bật/tắt nhãn ảnh minh họa theo ảnh. Dùng ô tìm kiếm bằng chữ đang xuất hiện trên website để tìm mục cần sửa.
+
+Schema v2 tự nâng cấp dữ liệu v1 trong bộ nhớ: giữ riêng bản nháp/bản công bố, ảnh đã upload, chữ và CTA cũ; không ghi thay dữ liệu lưu trên trình duyệt cho tới khi người dùng bấm lưu hoặc xuất bản.
