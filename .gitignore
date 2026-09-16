@@ -6,3 +6,7 @@ out/
 *.tsbuildinfo
 .next-dev/
 !.env.example
+
+dist/
+.sites-runtime/
+.local-data/

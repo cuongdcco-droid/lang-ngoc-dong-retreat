@@ -1,35 +1,35 @@
-# Làng Sinh Thái Ngọc Đồng
+# Website Làng Sinh Thái Ngọc Đồng
 
-Website Next.js (App Router), React, TypeScript, Tailwind CSS v4 và Framer Motion. Xuất tĩnh để triển khai trên bất kỳ dịch vụ lưu trữ static nào.
+Website giữ giao diện Next.js hiện có, có CMS tiếng Việt tại `/admin/` và bản xem trước tại `/preview/`.
 
-## Chạy
+## Dành cho chủ website
 
-Yêu cầu Node.js 22.13+ và pnpm 11.19.
+1. Mở `/admin/` và đăng nhập bằng tài khoản chủ website.
+2. Chọn nhóm nội dung, sửa chữ, thêm/xóa mục hoặc tải ảnh thay thế.
+3. **Lưu nháp** lưu riêng, chưa đổi nội dung khách đang xem.
+4. **Xem trước & xuất bản** cho phép kiểm tra máy tính/điện thoại; bấm **Xuất bản** khi đã kiểm tra.
+5. Trong **Hướng dẫn & sao lưu**, tải bản sao lưu trước khi nhập nội dung hoặc sửa nhiều mục.
+
+Các nhóm: trang chủ; giới thiệu; phòng nghỉ (giá, tiện nghi, ảnh); dịch vụ; thư viện; blog; liên hệ; SEO; menu và footer. Ảnh bìa giữ nguyên trừ khi chủ website tự chọn thay. Facebook/Booking/WhatsApp để trống sẽ không hiển thị. Google Maps trống sẽ dùng tìm kiếm theo địa chỉ.
+
+Phòng, giá và ảnh minh họa cần được chủ sở hữu xác nhận. Đặt phòng hiện là liên hệ trực tiếp, không thu tiền hoặc quản lý tồn phòng.
+
+## Chạy và triển khai
+
+Node.js 22.13+ (có node:sqlite), pnpm 11.19.
 
 ```sh
 pnpm install --frozen-lockfile
-pnpm dev
 pnpm build
+pnpm dev
 ```
 
-Bản production nằm trong `out/`. Có thể kiểm tra bằng `python3 -m http.server 3000 --directory out`.
+Bản xem trước tại `http://127.0.0.1:3026`. Chỉ chạy trên máy cục bộ; đăng nhập giả lập dùng cookie cục bộ. Dữ liệu thử nằm trong `.local-data/`, không đóng gói lên website. Chạy lại build và khởi động lại preview sau khi sửa mã nguồn.
 
-## Nội dung và media
+`pnpm build` tạo Next export, sau đó đóng gói Cloudflare Worker tại `dist/server/index.js` và tài nguyên tại `dist/client/`. **Không deploy riêng thư mục out/** vì CMS cần API máy chủ. Dùng Sites với `.openai/hosting.json`, giữ nguyên project ID, DB và BUCKET. Sites cấp D1/R2 và áp dụng các migration Drizzle trong `drizzle/`.
 
-- `app/page.tsx`: các section và tương tác.
-- `app/globals.css`: hệ màu, typography, responsive, reduced motion.
-- `lib/content.ts`: cấu hình media, phòng mẫu, câu chuyện theo cuộn.
-- `public/media/`: ảnh/video cục bộ. Thay đường dẫn trong `lib/content.ts`.
-- `ASSETS.md`: nguồn ảnh và hướng dẫn thay media AI.
+Khai báo `ADMIN_EMAIL` trong biến môi trường Sites là email chủ quản trị. Chỉ header danh tính đã xác minh bởi Sites được dùng để kiểm tra quyền; không đặt Worker sau proxy cho phép khách tự truyền header danh tính. Khi chuyển nền tảng phải thay lớp xác thực tương ứng.
 
-Địa chỉ do chủ sở hữu cung cấp: Ngọc Đồng – Thục Luyện – Thanh Sơn – Phú Thọ. Điện thoại: 0965163291.
+Để đổi schema: sửa `db/schema.ts`, chạy `pnpm db:generate`, kiểm tra migration mới rồi build/deploy. Không sửa migration đã áp dụng. Nội dung D1 và ảnh R2 tồn tại độc lập với mã nguồn, không bị ghi đè khi deploy lại.
 
-## Trước khi mở bán
-
-Phòng nghỉ trong bản thiết kế là mẫu, không phải danh mục đã xác nhận. Điền tên phòng, sức chứa, giá và ảnh thật trong dữ liệu. Không có đánh giá khách hoặc số sao được bịa đặt. Dịch vụ/trải nghiệm cần được chủ sở hữu xác nhận. Bản đồ tìm theo địa chỉ, chưa xác minh ghim chính xác. Booking dẫn tới cuộc gọi/Zalo để xác nhận, không tạo reservation hay thu tiền. Không có backend lưu dữ liệu khách.
-
-Sau khi có tên miền chính thức, khai báo NEXT_PUBLIC_SITE_URL khi build để tạo canonical, sitemap và robots chính xác.
-
-## Quản trị không cần sửa code
-
-Mở `/admin/` để sửa chữ, CTA, phòng/giá, dịch vụ, upload ảnh và sắp xếp các phần. Lưu nháp → Xem trước (desktop/mobile) → Xuất bản. `/` chỉ đọc bản đã xuất bản; `/preview/` đọc bản nháp. Bản demo lưu dữ liệu trong trình duyệt, chưa có backend/auth đa người dùng. Xem `CMS.md` để sử dụng và nối Supabase/CMS sau.
+Xem `CMS.md` cho lưu trữ, sao lưu, khôi phục và giới hạn.
