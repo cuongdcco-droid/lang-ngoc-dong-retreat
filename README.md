@@ -29,3 +29,7 @@ Bản production nằm trong `out/`. Có thể kiểm tra bằng `python3 -m htt
 Phòng nghỉ trong bản thiết kế là mẫu, không phải danh mục đã xác nhận. Điền tên phòng, sức chứa, giá và ảnh thật trong dữ liệu. Không có đánh giá khách hoặc số sao được bịa đặt. Dịch vụ/trải nghiệm cần được chủ sở hữu xác nhận. Bản đồ tìm theo địa chỉ, chưa xác minh ghim chính xác. Booking dẫn tới cuộc gọi/Zalo để xác nhận, không tạo reservation hay thu tiền. Không có backend lưu dữ liệu khách.
 
 Sau khi có tên miền chính thức, khai báo NEXT_PUBLIC_SITE_URL khi build để tạo canonical, sitemap và robots chính xác.
+
+## Quản trị không cần sửa code
+
+Mở `/admin/` để sửa chữ, CTA, phòng/giá, dịch vụ, upload ảnh và sắp xếp các phần. Lưu nháp → Xem trước (desktop/mobile) → Xuất bản. `/` chỉ đọc bản đã xuất bản; `/preview/` đọc bản nháp. Bản demo lưu dữ liệu trong trình duyệt, chưa có backend/auth đa người dùng. Xem `CMS.md` để sử dụng và nối Supabase/CMS sau.

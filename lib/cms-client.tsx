@@ -1,0 +1,6 @@
+'use client';
+import { Children, isValidElement, useEffect, useState, type ReactNode, type ReactElement } from 'react';
+import { freshContent, type SiteContent } from './cms';
+import { contentRepository } from './cms-repository';
+export function useSiteContent(preview=false){const [content,setContent]=useState<SiteContent>(freshContent);const [error,setError]=useState('');useEffect(()=>{let mounted=true;const sync=()=>contentRepository.load().then(s=>{if(mounted){setContent(preview?s.draft:s.published);setError('');}}).catch(()=>{if(mounted)setError('Chưa đọc được nội dung đã lưu. Trang đang hiển thị nội dung mẫu.');});sync();window.addEventListener('storage',sync);window.addEventListener('cms-change',sync);return()=>{mounted=false;window.removeEventListener('storage',sync);window.removeEventListener('cms-change',sync);};},[preview]);return {content,error};}
+export function OrderedMain({children,order}:{children:ReactNode;order:string[]}){const list=Children.toArray(children);const id=(c:ReactNode)=>{if(!isValidElement(c))return '';const e=c as ReactElement<{id?:string;className?:string;scenes?:unknown}>;return e.type==='section'?(e.props.id||'hero'):e.props.scenes?'story':'';};const sections=list.filter(c=>id(c)).sort((a,b)=>order.indexOf(id(a))-order.indexOf(id(b)));let i=0;return <main>{list.map(c=>id(c)?sections[i++]:c)}</main>;}

@@ -1,0 +1,602 @@
+[
+  {
+    "key": "story_1",
+    "group": "story",
+    "label": "Nội dung",
+    "value": "MỘT NGÀY, MỘT NHỊP SỐNG KHÁC"
+  },
+  {
+    "key": "story_2",
+    "group": "story",
+    "label": "Nội dung",
+    "value": "/ 06"
+  },
+  {
+    "key": "general_1",
+    "group": "general",
+    "label": "Nút / liên kết",
+    "value": "Đến nội dung chính"
+  },
+  {
+    "key": "header_1",
+    "group": "header",
+    "label": "Nội dung",
+    "value": "NĐ"
+  },
+  {
+    "key": "header_2",
+    "group": "header",
+    "label": "Nội dung",
+    "value": "NGỌC ĐỒNG"
+  },
+  {
+    "key": "header_3",
+    "group": "header",
+    "label": "Nội dung",
+    "value": "LÀNG SINH THÁI"
+  },
+  {
+    "key": "header_4",
+    "group": "header",
+    "label": "Nút / liên kết",
+    "value": "Đặt phòng "
+  },
+  {
+    "key": "hero_1",
+    "group": "hero",
+    "label": "Địa điểm phía trên tiêu đề",
+    "value": "THANH SƠN, PHÚ THỌ · VIỆT NAM"
+  },
+  {
+    "key": "hero_2",
+    "group": "hero",
+    "label": "Tiêu đề — dòng 1",
+    "value": "Về Làng,"
+  },
+  {
+    "key": "hero_3",
+    "group": "hero",
+    "label": "Tiêu đề — dòng 2",
+    "value": "chạm vào một"
+  },
+  {
+    "key": "hero_4",
+    "group": "hero",
+    "label": "Tiêu đề — dòng nhấn mạnh",
+    "value": "nhịp sống khác."
+  },
+  {
+    "key": "hero_5",
+    "group": "hero",
+    "label": "Mô tả — dòng 1",
+    "value": "Nghỉ dưỡng giữa thiên nhiên Thanh Sơn – gần đồi chè Long Cốc,"
+  },
+  {
+    "key": "hero_6",
+    "group": "hero",
+    "label": "Mô tả — dòng 2",
+    "value": "nơi dành cho những ngày muốn sống chậm lại."
+  },
+  {
+    "key": "hero_7",
+    "group": "hero",
+    "label": "Nhãn nút đặt phòng",
+    "value": "Đặt phòng tại Làng "
+  },
+  {
+    "key": "hero_8",
+    "group": "hero",
+    "label": "Nhãn nút khám phá",
+    "value": "Khám phá Làng "
+  },
+  {
+    "key": "hero_9",
+    "group": "hero",
+    "label": "Thông điệp cuối ảnh bìa",
+    "value": "RỜI PHỐ MỘT CHÚT. GẦN NHAU HƠN."
+  },
+  {
+    "key": "hero_10",
+    "group": "hero",
+    "label": "Nhãn hướng dẫn cuộn",
+    "value": "CUỘN ĐỂ CẢM NHẬN "
+  },
+  {
+    "key": "hero_11",
+    "group": "hero",
+    "label": "Chú thích ảnh bìa",
+    "value": "LONG CỐC · BÌNH MINH"
+  },
+  {
+    "key": "about_1",
+    "group": "about",
+    "label": "Mô tả",
+    "value": "MỘT NƠI ĐỂ TRỞ VỀ"
+  },
+  {
+    "key": "about_2",
+    "group": "about",
+    "label": "Tiêu đề",
+    "value": "Không cần đi thật xa."
+  },
+  {
+    "key": "about_3",
+    "group": "about",
+    "label": "Tiêu đề",
+    "value": "Chỉ cần một khoảng "
+  },
+  {
+    "key": "about_4",
+    "group": "about",
+    "label": "Nội dung",
+    "value": "xanh."
+  },
+  {
+    "key": "about_5",
+    "group": "about",
+    "label": "Mô tả",
+    "value": "Ở Ngọc Đồng, hãy dành thời gian cho một tách trà, một cuộc trò chuyện dài và những buổi sáng không vội. Một khoảng dừng giữa thiên nhiên Thanh Sơn, Phú Thọ."
+  },
+  {
+    "key": "about_6",
+    "group": "about",
+    "label": "Nội dung",
+    "value": "Mộc mạc trong từng điều nhỏ."
+  },
+  {
+    "key": "about_7",
+    "group": "about",
+    "label": "Nội dung",
+    "value": "01 — MÀU XANH CỦA MIỀN TRUNG DU"
+  },
+  {
+    "key": "about_8",
+    "group": "about",
+    "label": "Nội dung",
+    "value": "02 — MỘT CHÚT THẢNH THƠI · ẢNH MINH HỌA"
+  },
+  {
+    "key": "about_9",
+    "group": "about",
+    "label": "Mô tả",
+    "value": "NATURE. SIMPLICITY. CONNECTION."
+  },
+  {
+    "key": "experiences_1",
+    "group": "experiences",
+    "label": "Mô tả",
+    "value": "NHỮNG ĐIỀU NHỎ, NIỀM VUI LỚN"
+  },
+  {
+    "key": "experiences_2",
+    "group": "experiences",
+    "label": "Tiêu đề",
+    "value": "Ở Làng, mình làm gì?"
+  },
+  {
+    "key": "experiences_3",
+    "group": "experiences",
+    "label": "Mô tả",
+    "value": "Không cần lấp đầy lịch trình."
+  },
+  {
+    "key": "experiences_4",
+    "group": "experiences",
+    "label": "Mô tả",
+    "value": "Cứ chọn điều khiến mình thấy dễ chịu."
+  },
+  {
+    "key": "experiences_5",
+    "group": "experiences",
+    "label": "Mô tả",
+    "value": "Gợi ý cho chuyến đi. Vui lòng liên hệ Làng để xác nhận dịch vụ và lịch trải nghiệm tại thời điểm lưu trú."
+  },
+  {
+    "key": "rooms_1",
+    "group": "rooms",
+    "label": "Mô tả",
+    "value": "Ở LẠI THÊM MỘT CHÚT"
+  },
+  {
+    "key": "rooms_2",
+    "group": "rooms",
+    "label": "Tiêu đề",
+    "value": "Một nơi nghỉ."
+  },
+  {
+    "key": "rooms_3",
+    "group": "rooms",
+    "label": "Tiêu đề",
+    "value": "Nhiều điều để nhớ."
+  },
+  {
+    "key": "rooms_4",
+    "group": "rooms",
+    "label": "Mô tả",
+    "value": "Chọn không gian cho chuyến đi của mình."
+  },
+  {
+    "key": "rooms_5",
+    "group": "rooms",
+    "label": "Nút / liên kết",
+    "value": "Hỏi Làng về phòng trống "
+  },
+  {
+    "key": "rooms_6",
+    "group": "rooms",
+    "label": "Nội dung",
+    "value": "ẢNH MINH HỌA"
+  },
+  {
+    "key": "rooms_7",
+    "group": "rooms",
+    "label": "Nút / liên kết",
+    "value": "Hỏi phòng "
+  },
+  {
+    "key": "rooms_8",
+    "group": "rooms",
+    "label": "Mô tả",
+    "value": "Không gian gợi ý trong bản giới thiệu. Danh mục phòng, sức chứa và giá chính thức đang được cập nhật."
+  },
+  {
+    "key": "long-coc_1",
+    "group": "long-coc",
+    "label": "Nội dung",
+    "value": "LONG CỐC, PHÚ THỌ"
+  },
+  {
+    "key": "long-coc_2",
+    "group": "long-coc",
+    "label": "Mô tả",
+    "value": "MỘT ĐIỂM HẸN VỚI BÌNH MINH"
+  },
+  {
+    "key": "long-coc_3",
+    "group": "long-coc",
+    "label": "Tiêu đề",
+    "value": "Long Cốc."
+  },
+  {
+    "key": "long-coc_4",
+    "group": "long-coc",
+    "label": "Tiêu đề",
+    "value": "Xanh đến tận "
+  },
+  {
+    "key": "long-coc_5",
+    "group": "long-coc",
+    "label": "Nội dung",
+    "value": "chân trời."
+  },
+  {
+    "key": "long-coc_6",
+    "group": "long-coc",
+    "label": "Mô tả",
+    "value": "Những đồi chè nối nhau, lớp sương mỏng và ánh sáng đầu ngày. Long Cốc là một gợi ý để dành trọn buổi sáng cho thiên nhiên trong chuyến nghỉ dưỡng Phú Thọ."
+  },
+  {
+    "key": "long-coc_7",
+    "group": "long-coc",
+    "label": "Mô tả",
+    "value": "Nếu anh chị đang tìm homestay gần đồi chè Long Cốc hoặc một nơi nghỉ dưỡng Thanh Sơn, hãy liên hệ Làng Ngọc Đồng để được tư vấn phòng và lộ trình phù hợp."
+  },
+  {
+    "key": "long-coc_8",
+    "group": "long-coc",
+    "label": "Nút / liên kết",
+    "value": "Xem đồi chè Long Cốc trên bản đồ "
+  },
+  {
+    "key": "couples_1",
+    "group": "couples",
+    "label": "Mô tả",
+    "value": "MỘT CHUYẾN ĐI CHO HAI"
+  },
+  {
+    "key": "couples_2",
+    "group": "couples",
+    "label": "Tiêu đề",
+    "value": "Ít thông báo hơn."
+  },
+  {
+    "key": "couples_3",
+    "group": "couples",
+    "label": "Nội dung",
+    "value": "Nhiều chuyện để kể hơn."
+  },
+  {
+    "key": "couples_4",
+    "group": "couples",
+    "label": "Mô tả",
+    "value": "Một buổi sáng cùng uống trà. Một chiều chẳng cần đi đâu."
+  },
+  {
+    "key": "couples_5",
+    "group": "couples",
+    "label": "Mô tả",
+    "value": "Đôi khi, điều mình cần chỉ là thời gian bên nhau."
+  },
+  {
+    "key": "couples_6",
+    "group": "couples",
+    "label": "Nút / liên kết",
+    "value": "Hẹn một cuối tuần của hai mình "
+  },
+  {
+    "key": "couples_7",
+    "group": "couples",
+    "label": "Nội dung",
+    "value": "KHÔNG GIAN MINH HỌA"
+  },
+  {
+    "key": "gallery_1",
+    "group": "gallery",
+    "label": "Mô tả",
+    "value": "GIỮ LẠI MỘT KHOẢNH KHẮC"
+  },
+  {
+    "key": "gallery_2",
+    "group": "gallery",
+    "label": "Tiêu đề",
+    "value": "Chút bình yên, mang về."
+  },
+  {
+    "key": "gallery_3",
+    "group": "gallery",
+    "label": "Mô tả",
+    "value": "Những sắc màu gợi cảm hứng cho chuyến đi."
+  },
+  {
+    "key": "gallery_4",
+    "group": "gallery",
+    "label": "Nội dung",
+    "value": "ẢNH MINH HỌA"
+  },
+  {
+    "key": "reviews_1",
+    "group": "reviews",
+    "label": "Mô tả",
+    "value": "CHUYỆN SAU MỖI LẦN GHÉ"
+  },
+  {
+    "key": "reviews_2",
+    "group": "reviews",
+    "label": "Tiêu đề",
+    "value": "Mỗi chuyến về Làng,"
+  },
+  {
+    "key": "reviews_3",
+    "group": "reviews",
+    "label": "Tiêu đề",
+    "value": "một câu chuyện riêng."
+  },
+  {
+    "key": "reviews_4",
+    "group": "reviews",
+    "label": "Mô tả",
+    "value": "Những cảm nhận đầu tiên đang chờ được chia sẻ."
+  },
+  {
+    "key": "reviews_5",
+    "group": "reviews",
+    "label": "Mô tả",
+    "value": "Làng sẽ cập nhật đánh giá đã được xác thực tại đây."
+  },
+  {
+    "key": "reviews_6",
+    "group": "reviews",
+    "label": "Mô tả",
+    "value": "Anh chị đã ghé Làng? Gửi lời nhắn qua "
+  },
+  {
+    "key": "reviews_7",
+    "group": "reviews",
+    "label": "Nút / liên kết",
+    "value": "Zalo của Làng "
+  },
+  {
+    "key": "reviews_8",
+    "group": "reviews",
+    "label": "Mô tả",
+    "value": "."
+  },
+  {
+    "key": "location_1",
+    "group": "location",
+    "label": "Mô tả",
+    "value": "ĐƯỜNG VỀ LÀNG"
+  },
+  {
+    "key": "location_2",
+    "group": "location",
+    "label": "Tiêu đề",
+    "value": "Hẹn gặp nhau"
+  },
+  {
+    "key": "location_3",
+    "group": "location",
+    "label": "Tiêu đề",
+    "value": "ở "
+  },
+  {
+    "key": "location_4",
+    "group": "location",
+    "label": "Nội dung",
+    "value": "Ngọc Đồng."
+  },
+  {
+    "key": "location_5",
+    "group": "location",
+    "label": "Mô tả",
+    "value": "Trước khi khởi hành, anh chị gọi Làng để được hướng dẫn lối vào và xác nhận điểm đón phù hợp."
+  },
+  {
+    "key": "location_6",
+    "group": "location",
+    "label": "Nút / liên kết",
+    "value": "Mở chỉ đường Google Maps "
+  },
+  {
+    "key": "location_8",
+    "group": "location",
+    "label": "Nội dung",
+    "value": "NGỌC ĐỒNG · PHÚ THỌ"
+  },
+  {
+    "key": "location_9",
+    "group": "location",
+    "label": "Tiêu đề",
+    "value": "Một chuyến về miền xanh."
+  },
+  {
+    "key": "location_10",
+    "group": "location",
+    "label": "Nội dung",
+    "value": "Hiển thị bản đồ "
+  },
+  {
+    "key": "location_11",
+    "group": "location",
+    "label": "Mô tả",
+    "value": "Bản đồ tìm theo địa chỉ, chưa xác minh ghim của Làng."
+  },
+  {
+    "key": "booking_1",
+    "group": "booking",
+    "label": "Mô tả",
+    "value": "DÀNH CHO MỘT NGÀY KHÔNG VỘI"
+  },
+  {
+    "key": "booking_2",
+    "group": "booking",
+    "label": "Tiêu đề",
+    "value": "Làng vẫn ở đây."
+  },
+  {
+    "key": "booking_3",
+    "group": "booking",
+    "label": "Nội dung",
+    "value": "Chờ một ngày anh chị ghé."
+  },
+  {
+    "key": "booking_4",
+    "group": "booking",
+    "label": "Mô tả",
+    "value": "Cho Làng biết ngày dự kiến, số khách và không gian mong muốn."
+  },
+  {
+    "key": "booking_5",
+    "group": "booking",
+    "label": "Mô tả",
+    "value": "Mình cùng tìm một kỳ nghỉ vừa vặn."
+  },
+  {
+    "key": "booking_6",
+    "group": "booking",
+    "label": "Nút / liên kết",
+    "value": "Gọi đặt phòng"
+  },
+  {
+    "key": "booking_7",
+    "group": "booking",
+    "label": "Nút / liên kết",
+    "value": "Nhắn Zalo cho Làng "
+  },
+  {
+    "key": "booking_8",
+    "group": "booking",
+    "label": "Mô tả",
+    "value": "Phòng và mức giá được xác nhận trực tiếp cùng Làng."
+  },
+  {
+    "key": "footer_1",
+    "group": "footer",
+    "label": "Nội dung",
+    "value": "NĐ"
+  },
+  {
+    "key": "footer_2",
+    "group": "footer",
+    "label": "Nội dung",
+    "value": "NGỌC ĐỒNG"
+  },
+  {
+    "key": "footer_3",
+    "group": "footer",
+    "label": "Nội dung",
+    "value": "LÀNG SINH THÁI"
+  },
+  {
+    "key": "footer_4",
+    "group": "footer",
+    "label": "Mô tả",
+    "value": "Về Làng, chạm vào một nhịp sống khác."
+  },
+  {
+    "key": "footer_5",
+    "group": "footer",
+    "label": "Mô tả",
+    "value": "KHÁM PHÁ"
+  },
+  {
+    "key": "footer_6",
+    "group": "footer",
+    "label": "Nút / liên kết",
+    "value": "Ở tại Làng"
+  },
+  {
+    "key": "footer_7",
+    "group": "footer",
+    "label": "Nút / liên kết",
+    "value": "Trải nghiệm"
+  },
+  {
+    "key": "footer_8",
+    "group": "footer",
+    "label": "Nút / liên kết",
+    "value": "Đồi chè Long Cốc"
+  },
+  {
+    "key": "footer_9",
+    "group": "footer",
+    "label": "Mô tả",
+    "value": "KẾT NỐI VỚI LÀNG"
+  },
+  {
+    "key": "footer_11",
+    "group": "footer",
+    "label": "Nút / liên kết",
+    "value": "Zalo "
+  },
+  {
+    "key": "footer_12",
+    "group": "footer",
+    "label": "Nội dung",
+    "value": "© "
+  },
+  {
+    "key": "footer_13",
+    "group": "footer",
+    "label": "Nội dung",
+    "value": "Làng Sinh Thái Ngọc Đồng"
+  },
+  {
+    "key": "footer_14",
+    "group": "footer",
+    "label": "Nội dung",
+    "value": "Ảnh phòng, hồ bơi và trà là ảnh minh họa."
+  },
+  {
+    "key": "footer_15",
+    "group": "footer",
+    "label": "Nút / liên kết",
+    "value": "Về đầu trang ↑"
+  },
+  {
+    "key": "general_2",
+    "group": "general",
+    "label": "Nội dung",
+    "value": "/ "
+  }
+]

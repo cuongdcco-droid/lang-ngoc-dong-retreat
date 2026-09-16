@@ -14,3 +14,15 @@
 ## Giới hạn nội dung
 
 Chưa có video AI, ảnh thật của phòng, danh mục phòng, bảng giá hoặc đánh giá xác thực do chủ sở hữu cung cấp. Cấu trúc thay media và dữ liệu đã sẵn sàng. Booking là liên hệ trực tiếp, không có hệ thống quản lý tồn phòng/thanh toán. Ghim bản đồ cần chủ sở hữu xác nhận.
+
+## Kiểm tra bổ sung CMS — 16/09/2026
+
+- Production build sau bổ sung CMS: thành công, gồm `/`, `/admin`, `/preview`.
+- Trình duyệt Chrome headless: sửa tiêu đề, upload ảnh JPEG, lưu nháp; trang public vẫn giữ bản công bố cũ.
+- Preview nhận đúng chữ và ảnh mới. Chuyển khung xem trước sang điện thoại hoạt động.
+- Publish cập nhật chữ/ảnh ngay trên tab public đang mở; tải lại giữ dữ liệu.
+- Sửa giá phòng, đổi thứ tự section và tải lại: đúng dữ liệu và thứ tự.
+- Kiểm tra public/admin tại chiều rộng 1440, 768, 390, 320 px: không tràn ngang.
+- Kiểm tra trực quan desktop, mobile và dialog preview. Có fallback vh cho trình duyệt chưa hỗ trợ dvh.
+- Không ghi nhận pageerror trong lượt kiểm tra cuối. Test dùng browser context riêng và xóa dữ liệu thử sau khi hoàn tất.
+- Giới hạn: đây là local mock, không kiểm tra Supabase/Auth vì chưa cấu hình. Không đồng bộ nội dung giữa thiết bị/người dùng.
