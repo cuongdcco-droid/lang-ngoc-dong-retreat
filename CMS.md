@@ -44,3 +44,7 @@ Website giữ nguyên audience hiện tại của Sites. Khi còn riêng tư, c�
 - `scripts/preview.mjs`: mô phỏng local bằng SQLite và filesystem, không nằm trong Worker production.
 
 Giới hạn: 50 phòng, 50 dịch vụ, 100 ảnh thư viện, 100 bài viết, 12 mục menu; nội dung JSON tối đa khoảng 850 KB. Không có quản lý nhiều vai trò biên tập, đặt phòng/thanh toán tự động hoặc chuyển hướng slug cũ.
+
+## Thêm quản trị nội dung
+
+`ADMIN_EMAIL` giữ tài khoản chủ web. `ADMIN_EMAILS` là danh sách email quản trị bổ sung, phân tách bằng dấu phẩy. Cả hai được kiểm tra với danh tính đăng nhập đã xác minh bởi Sites, tại mọi API quản trị. Người được thêm có thể sửa, tải ảnh, xem nháp và xuất bản nội dung; không được cấp quyền tài khoản hosting, thanh toán hoặc mã nguồn. Thay biến môi trường cần triển khai lại phiên bản để có hiệu lực.

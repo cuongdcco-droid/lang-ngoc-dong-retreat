@@ -2,11 +2,11 @@ import {freshContent,migrateContent,validateContent,type SiteContent} from '../l
 import {renderToString} from 'react-dom/server';
 import {createElement} from 'react';
 import Home from '../app/public-site';
-type Env={DB:any;BUCKET:any;ASSETS:{fetch:(r:Request)=>Promise<Response>};ADMIN_EMAIL:string};
+type Env={DB:any;BUCKET:any;ASSETS:{fetch:(r:Request)=>Promise<Response>};ADMIN_EMAIL:string;ADMIN_EMAILS?:string};
 const json=(data:unknown,status=200)=>new Response(JSON.stringify(data),{status,headers:{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});
 const esc=(s:string)=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]!));
 async function load(env:Env){const row=await env.DB.prepare('SELECT draft,published,revision,published_at FROM site_content WHERE id=1').first();return row?{draft:migrateContent(JSON.parse(row.draft)),published:migrateContent(JSON.parse(row.published)),revision:row.revision,publishedAt:row.published_at}:{draft:freshContent(),published:freshContent(),revision:0,publishedAt:null};}
-function editor(req:Request,env:Env){return !!req.headers.get('oai-authenticated-user-id')&&!!env.ADMIN_EMAIL&&req.headers.get('oai-authenticated-user-email')?.toLowerCase()===env.ADMIN_EMAIL.toLowerCase();}
+function editor(req:Request,env:Env){const email=req.headers.get('oai-authenticated-user-email')?.trim().toLowerCase();const allowed=[env.ADMIN_EMAIL||'',...(env.ADMIN_EMAILS||'').split(',')].map(value=>value.trim().toLowerCase()).filter(Boolean);return !!req.headers.get('oai-authenticated-user-id')&&!!email&&allowed.includes(email);}
 async function limited(req:Request,max:number){const reader=req.body?.getReader();if(!reader)throw new Error('Thiếu dữ liệu.');const parts:Uint8Array[]=[];let size=0;while(true){const {done,value}=await reader.read();if(done)break;size+=value.length;if(size>max){await reader.cancel();throw new Error('Dữ liệu vượt quá giới hạn.');}parts.push(value);}const out=new Uint8Array(size);let offset=0;for(const part of parts){out.set(part,offset);offset+=part.length;}return out;}
 const security={'X-Content-Type-Options':'nosniff','Referrer-Policy':'strict-origin-when-cross-origin','Content-Security-Policy':"frame-ancestors 'self' https://*.chatgpt.com https://chatgpt.com; object-src 'none'; base-uri 'self'"};
 function html(body:string,status=200){return new Response(body,{status,headers:{...security,'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-store'}});}
