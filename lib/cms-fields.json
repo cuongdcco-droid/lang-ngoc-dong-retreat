@@ -510,6 +510,42 @@
     "value": "Phòng và mức giá được xác nhận trực tiếp cùng Làng."
   },
   {
+    "key": "blog_1",
+    "group": "blog",
+    "label": "Dòng giới thiệu mục bài viết",
+    "value": "CHUYỆN Ở LÀNG"
+  },
+  {
+    "key": "blog_2",
+    "group": "blog",
+    "label": "Tiêu đề mục bài viết",
+    "value": "Những câu chuyện mới nhất."
+  },
+  {
+    "key": "blog_3",
+    "group": "blog",
+    "label": "Mô tả mục bài viết",
+    "value": "Gợi ý cho chuyến đi, những khoảnh khắc ở Làng và câu chuyện miền trung du."
+  },
+  {
+    "key": "blog_4",
+    "group": "blog",
+    "label": "Nút xem tất cả bài viết",
+    "value": "Xem tất cả bài viết"
+  },
+  {
+    "key": "blog_5",
+    "group": "blog",
+    "label": "Nút đọc bài",
+    "value": "Đọc bài viết"
+  },
+  {
+    "key": "blog_6",
+    "group": "blog",
+    "label": "Thông báo khi chưa có bài",
+    "value": "Bài viết mới đang được chuẩn bị. Anh chị có thể mở trang Bài viết để xem khi nội dung được cập nhật."
+  },
+  {
     "key": "footer_1",
     "group": "footer",
     "label": "Nội dung",
