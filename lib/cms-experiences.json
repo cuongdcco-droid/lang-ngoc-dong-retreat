@@ -1,34 +1,90 @@
 [
   {
     "title": "Nghỉ giữa thiên nhiên",
-    "text": "Dành chỗ cho những buổi sáng thảnh thơi."
+    "text": "Dành chỗ cho những buổi sáng thảnh thơi.",
+    "articleEnabled": true,
+    "slug": "nghi-giua-thien-nhien",
+    "image": "/media/long-coc.jpg",
+    "alt": "Nghỉ giữa thiên nhiên tại Làng Sinh Thái Ngọc Đồng",
+    "body": "Ở Làng Sinh Thái Ngọc Đồng, kỳ nghỉ bắt đầu từ những điều rất giản dị: thức dậy giữa không gian xanh, nghe tiếng chim và dành thời gian cho chính mình. Không cần một lịch trình dày, anh chị vẫn có thể tận hưởng trọn vẹn nhịp sống chậm của miền trung du.\n\nBuổi sáng có thể bắt đầu bằng một vòng dạo quanh Làng, một tách trà hoặc cà phê và khoảng lặng nhìn cây cỏ. Buổi chiều là thời gian nghỉ ngơi, đọc sách hoặc trò chuyện cùng người thân. Mỗi ngày sẽ được gợi ý linh hoạt theo thời tiết và sở thích của khách.\n\nHãy liên hệ trước để Làng chuẩn bị phòng nghỉ và tư vấn lịch trình phù hợp cho gia đình, nhóm bạn hoặc chuyến đi hai người.",
+    "seoTitle": "Nghỉ giữa thiên nhiên tại Làng Sinh Thái Ngọc Đồng",
+    "metaDescription": "Gợi ý kỳ nghỉ chậm giữa không gian xanh tại Làng Sinh Thái Ngọc Đồng, Thanh Sơn, Phú Thọ."
   },
   {
     "title": "Đồi chè Long Cốc",
-    "text": "Hẹn bình minh trên những đồi chè xanh."
+    "text": "Hẹn bình minh trên những đồi chè xanh.",
+    "articleEnabled": true,
+    "slug": "doi-che-long-coc",
+    "image": "/media/long-coc.jpg",
+    "alt": "Những đồi chè Long Cốc nối nhau trong ánh sáng sớm",
+    "body": "Một buổi sáng ở Long Cốc bắt đầu khi lớp sương còn nằm nhẹ trên những đồi chè. Từ Làng Sinh Thái Ngọc Đồng, anh chị có thể dành riêng một khoảng thời gian để ngắm bình minh và đi chậm giữa màu xanh của miền trung du.\n\nTrải nghiệm phù hợp với những người muốn tìm một nhịp nghỉ nhẹ nhàng: thức dậy sớm, chuẩn bị một chiếc áo khoác mỏng và để lịch trình đủ thoáng cho việc dừng lại chụp ảnh. Thời tiết và tầm nhìn thay đổi theo từng ngày, vì vậy Làng sẽ tư vấn thời điểm khởi hành phù hợp trước chuyến đi.\n\nSau buổi sáng ở đồi chè, anh chị có thể trở về Làng dùng bữa, nghỉ ngơi hoặc tiếp tục một ngày thư thả bên những không gian xanh. Hãy liên hệ trước để Làng hỗ trợ phòng nghỉ và gợi ý lịch trình.",
+    "seoTitle": "Trải nghiệm đồi chè Long Cốc từ Làng Ngọc Đồng",
+    "metaDescription": "Gợi ý một buổi sáng ngắm bình minh, chụp ảnh và đi giữa đồi chè Long Cốc khi nghỉ tại Làng Sinh Thái Ngọc Đồng."
   },
   {
     "title": "Một chiều bên hồ bơi",
-    "text": "Thêm một khoảng thư giãn vào ngày nghỉ."
+    "text": "Thêm một khoảng thư giãn vào ngày nghỉ.",
+    "articleEnabled": true,
+    "slug": "mot-chieu-ben-ho-boi",
+    "image": "/media/pool-reference.jpg",
+    "alt": "Một chiều bên hồ bơi tại Làng Sinh Thái Ngọc Đồng",
+    "body": "Một buổi chiều bên hồ bơi là khoảng nghỉ dễ chịu sau khi tham quan hoặc dạo quanh Làng. Anh chị có thể thả lỏng, ngắm không gian xanh và dành thời gian vui chơi cùng gia đình.\n\nTrải nghiệm phù hợp cho cả kỳ nghỉ ngắn lẫn cuối tuần dài. Làng sẽ thông báo thời gian sử dụng, tình trạng hồ và những lưu ý cần thiết để mọi người có một buổi thư giãn an toàn.\n\nAnh chị nên liên hệ trước để Làng kiểm tra điều kiện thời tiết và sắp xếp lịch phù hợp trong ngày lưu trú.",
+    "seoTitle": "Một chiều bên hồ bơi tại Làng Ngọc Đồng",
+    "metaDescription": "Thư giãn bên hồ bơi giữa không gian xanh trong kỳ nghỉ tại Làng Sinh Thái Ngọc Đồng."
   },
   {
     "title": "Cà phê & ngắm cảnh",
-    "text": "Một tách cà phê. Một câu chuyện chưa hết."
+    "text": "Một tách cà phê. Một câu chuyện chưa hết.",
+    "articleEnabled": true,
+    "slug": "ca-phe-ngam-canh",
+    "image": "/media/tea-reference.jpg",
+    "alt": "Cà phê và ngắm cảnh tại Làng Sinh Thái Ngọc Đồng",
+    "body": "Một tách cà phê ngon hơn khi không cần vội. Tại Làng, anh chị có thể chọn một góc yên tĩnh, ngắm cảnh và để câu chuyện kéo dài qua buổi sáng hoặc chiều muộn.\n\nĐây là trải nghiệm nhẹ nhàng dành cho người muốn nghỉ thật chậm, đọc vài trang sách, làm việc từ xa trong thời gian ngắn hoặc trò chuyện cùng bạn đồng hành. Không gian và đồ uống có thể được sắp xếp theo tình hình phục vụ trong ngày.\n\nHãy nhắn trước cho Làng nếu anh chị muốn kết hợp cà phê, ngắm cảnh với lịch tham quan đồi chè hoặc một bữa ăn tại chỗ.",
+    "seoTitle": "Cà phê và ngắm cảnh tại Làng Ngọc Đồng",
+    "metaDescription": "Thưởng thức cà phê, ngắm cảnh và tận hưởng nhịp sống chậm tại Làng Sinh Thái Ngọc Đồng."
   },
   {
     "title": "Một bữa cơm quê",
-    "text": "Tìm lại niềm vui từ bữa cơm quây quần."
+    "text": "Tìm lại niềm vui từ bữa cơm quây quần.",
+    "articleEnabled": true,
+    "slug": "mot-bua-com-que",
+    "image": "/media/tea-reference.jpg",
+    "alt": "Một bữa cơm quê tại Làng Sinh Thái Ngọc Đồng",
+    "body": "Bữa cơm quê là dịp để mọi người ngồi lại bên nhau sau một ngày khám phá. Món ăn hướng tới hương vị gần gũi, nguyên liệu theo mùa và cách phục vụ ấm cúng như một bữa cơm gia đình.\n\nThực đơn có thể thay đổi theo ngày, số lượng khách và nguồn nguyên liệu. Anh chị có thể báo trước nhu cầu ăn uống, số người, trẻ nhỏ hoặc những món cần tránh để Làng chuẩn bị phù hợp.\n\nĐặt bữa trước khi đến sẽ giúp Làng phục vụ chu đáo hơn và gợi ý khung giờ phù hợp với lịch nghỉ, tham quan của đoàn.",
+    "seoTitle": "Bữa cơm quê tại Làng Sinh Thái Ngọc Đồng",
+    "metaDescription": "Thưởng thức bữa cơm quê ấm cúng với món ăn theo mùa tại Làng Sinh Thái Ngọc Đồng."
   },
   {
     "title": "Ngâm chân thảo dược",
-    "text": "Gợi ý thư giãn sau một ngày dạo bước."
+    "text": "Gợi ý thư giãn sau một ngày dạo bước.",
+    "articleEnabled": true,
+    "slug": "ngam-chan-thao-duoc",
+    "image": "/media/tea-reference.jpg",
+    "alt": "Ngâm chân thảo dược tại Làng Sinh Thái Ngọc Đồng",
+    "body": "Sau một ngày đi bộ, tham quan hoặc di chuyển, ngâm chân thảo dược là một gợi ý để cơ thể chậm lại và thư giãn hơn. Hơi ấm cùng hương thảo mộc tạo nên một khoảng nghỉ nhẹ nhàng trước giờ ngủ.\n\nTrải nghiệm được chuẩn bị theo điều kiện phục vụ thực tế tại Làng. Anh chị nên thông báo trước nếu có da nhạy cảm, đang mang thai hoặc có vấn đề sức khỏe cần lưu ý để được tư vấn phù hợp.\n\nCó thể kết hợp ngâm chân với một buổi tối yên tĩnh, thưởng trà và nghỉ ngơi tại phòng sau hành trình trong ngày.",
+    "seoTitle": "Ngâm chân thảo dược tại Làng Ngọc Đồng",
+    "metaDescription": "Gợi ý thư giãn bằng ngâm chân thảo dược sau một ngày trải nghiệm tại Làng Sinh Thái Ngọc Đồng."
   },
   {
     "title": "Chỉ hai chúng mình",
-    "text": "Thời gian dành riêng cho người bên cạnh."
+    "text": "Thời gian dành riêng cho người bên cạnh.",
+    "articleEnabled": true,
+    "slug": "chi-hai-chung-minh",
+    "image": "/media/wooden-room-reference.jpg",
+    "alt": "Không gian cho hai người tại Làng Sinh Thái Ngọc Đồng",
+    "body": "Một chuyến đi hai người không cần quá nhiều hoạt động. Chỉ cần một căn phòng ấm, một bữa ăn thong thả và đủ thời gian để cùng nhau ngắm cảnh, trò chuyện là đã thành một kỷ niệm đẹp.\n\nLàng có thể gợi ý lịch trình nhẹ nhàng gồm nghỉ ngơi, cà phê, dạo quanh không gian xanh và tham quan đồi chè nếu thời tiết thuận lợi. Mỗi lựa chọn sẽ được sắp xếp theo nhu cầu riêng của hai anh chị.\n\nHãy liên hệ trước để Làng tư vấn phòng, bữa ăn và những khoảng thời gian đẹp trong ngày cho chuyến đi.",
+    "seoTitle": "Kỳ nghỉ hai người tại Làng Sinh Thái Ngọc Đồng",
+    "metaDescription": "Gợi ý chuyến nghỉ dưỡng riêng tư dành cho hai người tại Làng Sinh Thái Ngọc Đồng, Phú Thọ."
   },
   {
     "title": "Cuối tuần rời Hà Nội",
-    "text": "Đổi nhịp cuối tuần bằng một chuyến về Làng."
+    "text": "Đổi nhịp cuối tuần bằng một chuyến về Làng.",
+    "articleEnabled": true,
+    "slug": "cuoi-tuan-roi-ha-noi",
+    "image": "/media/long-coc.jpg",
+    "alt": "Cuối tuần về Làng Sinh Thái Ngọc Đồng",
+    "body": "Rời Hà Nội vào cuối tuần, anh chị có thể đổi nhịp bằng một chuyến đi về miền trung du Phú Thọ. Làng Sinh Thái Ngọc Đồng là điểm dừng để nghỉ ngơi, tận hưởng không gian xanh và khám phá những cảnh đẹp gần đó.\n\nMột lịch trình thư thả có thể gồm nhận phòng, dùng bữa, nghỉ tại Làng và dành buổi sáng hôm sau cho đồi chè Long Cốc. Thời gian di chuyển, hoạt động và bữa ăn sẽ được điều chỉnh theo gia đình, nhóm bạn hoặc cặp đôi.\n\nAnh chị nên liên hệ trước ngày đi để Làng kiểm tra phòng trống, thời tiết và gợi ý lộ trình phù hợp từ Hà Nội.",
+    "seoTitle": "Gợi ý cuối tuần từ Hà Nội về Làng Ngọc Đồng",
+    "metaDescription": "Lịch trình cuối tuần từ Hà Nội đến Làng Sinh Thái Ngọc Đồng và đồi chè Long Cốc, Phú Thọ."
   }
 ]

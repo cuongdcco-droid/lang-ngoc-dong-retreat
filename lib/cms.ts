@@ -28,13 +28,15 @@ export function validateContent(c:SiteContent){
  if(!/^[+\d ()-]{6,24}$/.test(c.contact.phone)||!/^https:\/\/[^\s]+$/.test(c.contact.zalo))throw new Error('Số điện thoại hoặc liên kết Zalo không hợp lệ.');
  if([...Object.values(c.links),...c.navigation.map(n=>n.href),...c.rooms.map(r=>r.ctaHref)].some(v=>!safeLink(v))||!safeLink(c.cta.href))throw new Error('Liên kết CTA cần dùng #section, đường dẫn nội bộ, https, tel hoặc mailto.');
  if(c.rooms.length>50||c.scenes.length!==scenes.length||c.gallery.length>100||c.experiences.length>50||c.posts.length>100||c.navigation.length>12)throw new Error('Danh sách nội dung không đúng cấu trúc.');
- const images=[...Object.values(c.images).map(r=>r.image),c.media.hero.image,c.media.tea,c.media.room,c.media.pool,...c.rooms.map(r=>r.image),...c.scenes.map(s=>s.image),...c.gallery.map(g=>g.src),c.seo.shareImage,...c.posts.filter(p=>p.image).map(p=>p.image)];
+ const images=[...Object.values(c.images).map(r=>r.image),c.media.hero.image,c.media.tea,c.media.room,c.media.pool,...c.rooms.map(r=>r.image),...c.scenes.map(s=>s.image),...c.gallery.map(g=>g.src),...c.experiences.filter(e=>e.image).map(e=>e.image),c.seo.shareImage,...c.posts.filter(p=>p.image).map(p=>p.image)];
  if(images.some(v=>!safeImage(v)))throw new Error('Ảnh cần là file đã tải lên, ảnh có sẵn hoặc liên kết HTTPS.');
  if(Object.entries(c.contact).some(([k,v])=>!['phone','zalo'].includes(k)&&v&&!/^https:\/\/[^\s]+$/.test(v)))throw new Error('Liên kết liên hệ phải bắt đầu bằng https:// hoặc để trống.');
  if(!/^https:\/\/[^\s]+$/.test(c.seo.siteUrl)||new URL(c.seo.siteUrl).pathname!=='/'||new URL(c.seo.siteUrl).search||new URL(c.seo.siteUrl).hash)throw new Error('Tên miền SEO cần là https://ten-mien, không kèm đường dẫn.');
  if(!c.seo.title.trim()||!c.seo.description.trim())throw new Error('Vui lòng điền tiêu đề và mô tả SEO.');
  const slugs=new Set<string>();
  for(const post of c.posts){checkShape(post,{id:'',title:'',slug:'',excerpt:'',body:'',image:'',alt:'',seoTitle:'',metaDescription:'',published:false,date:''});if(!post.title.trim()||!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(post.slug)||slugs.has(post.slug))throw new Error('Bài viết cần tên và slug duy nhất, chỉ gồm chữ thường không dấu, số và dấu gạch nối.');slugs.add(post.slug);if(!/^\d{4}-\d{2}-\d{2}$/.test(post.date)||!Number.isFinite(Date.parse(post.date)))throw new Error('Ngày bài viết không hợp lệ.');if(post.published&&!post.body.trim())throw new Error('Bài viết hiển thị cần có nội dung.');}
+ const experienceSlugs=new Set<string>();
+ for(const item of c.experiences){if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(item.slug)||experienceSlugs.has(item.slug))throw new Error('Trải nghiệm cần đường dẫn duy nhất, chỉ gồm chữ thường không dấu, số và dấu gạch nối.');experienceSlugs.add(item.slug);if(item.articleEnabled&&(!item.body.trim()||!item.image.trim()))throw new Error('Trải nghiệm có trang chi tiết cần nội dung và ảnh đại diện.');}
  if(JSON.stringify(c).length>850000)throw new Error('Nội dung quá lớn. Hãy tải ảnh lên thay vì dán ảnh vào dữ liệu.');
 
 }
@@ -45,7 +47,7 @@ export function migrateContent(input:unknown):SiteContent {
  const old=input as SiteContent;if(![1,2,3].includes(old.schemaVersion))throw new Error('Phiên bản nội dung chưa hỗ trợ.');
  const base=freshContent();const next={...base,...old,schemaVersion:3,copy:{...base.copy,...old.copy},contact:{...base.contact,...old.contact},seo:{...base.seo,...old.seo},images:{...base.images,...old.images},links:{...base.links,...old.links}};
  if(old.schemaVersion===1){next.images={aboutLandscape:{image:old.media.hero.image,alt:base.images.aboutLandscape.alt},aboutTea:{image:old.media.tea,alt:base.images.aboutTea.alt},longCoc:{image:old.media.hero.image,alt:base.images.longCoc.alt},couples:{image:old.media.room,alt:base.images.couples.alt}};for(const key of ['headerBooking','heroBooking','roomsEnquiry','couplesBooking'])next.links[key]=old.cta.href;}
- next.rooms=old.rooms.map(r=>({...base.rooms[0],...(old.schemaVersion===1?{ctaLabel:old.copy.rooms_7||'Hỏi phòng',ctaHref:old.cta.href}:{}),...r}));next.scenes=old.scenes.map((r,i)=>({...base.scenes[i],...r}));
+ next.rooms=old.rooms.map(r=>({...base.rooms[0],...(old.schemaVersion===1?{ctaLabel:old.copy.rooms_7||'Hỏi phòng',ctaHref:old.cta.href}:{}),...r}));next.scenes=old.scenes.map((r,i)=>({...base.scenes[i],...r}));next.experiences=old.experiences.map((r,i)=>({...base.experiences[i%base.experiences.length],...r}));
  validateContent(next);return next;
 }
 function checkShape(value:unknown,example:unknown,path='nội dung'):void{
