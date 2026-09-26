@@ -36,7 +36,7 @@ export default {async fetch(req:Request,env:Env){const url=new URL(req.url);cons
  if(!path.startsWith('/api/admin/'))return json({error:'Thao tác không được hỗ trợ.'},405);
  if(req.headers.get('origin')!==url.origin)return json({error:'Yêu cầu không hợp lệ. Hãy mở lại trang quản trị.'},403);
  }
- if(path==='/api/admin/session')return json({authenticated:true,email:authenticatedEmail,administrators:administrators(env).map((email,index)=>({email,role:index===0?'owner':'admin'}))});
+ if(path==='/api/admin/session')return json({authenticated:true,email:authenticatedEmail,administrators:administrators(env).map(email=>({email,role:'owner'}))});
  if(path==='/api/content'){const s=await load(env);return json({content:{...s.published,posts:s.published.posts.filter(p=>p.published)}});}
  if(path==='/api/admin/content'){
  if(req.method==='GET')return json(await load(env));
