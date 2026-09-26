@@ -17,7 +17,7 @@ export type SiteContent = typeof defaultContent;
 export type Snapshot = {draft:SiteContent;published:SiteContent;publishedAt:string|null;revision:number};
 export interface ContentRepository {load():Promise<Snapshot>;saveDraft(content:SiteContent):Promise<void>;publish(content:SiteContent):Promise<void>;}
 export interface AssetStorage {upload(file:File):Promise<string>;}
-export interface AdminAuth {getSession():Promise<{mode:'server';label:string}|null>;}
+export interface AdminAuth {getSession():Promise<{mode:'server';label:string;email:string;administrators:{email:string;role:'owner'|'admin'}[]}|null>;}
 export const freshContent=():SiteContent=>JSON.parse(JSON.stringify(defaultContent));
 export function safeLink(value:string){return /^(#[\w-]*|\/(?!\/)[^\\]*|https:\/\/[^\s]+|tel:\+?[\d\s-]+|mailto:[^\s]+)$/i.test(value);}
 export function safeImage(value:string){return /^(\/(?:media|uploads)\/[^\\]*|https:\/\/[^\s]+|data:image\/(jpeg|png|webp);base64,[a-z0-9+/=]+)$/i.test(value);}
